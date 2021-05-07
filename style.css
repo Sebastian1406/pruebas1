@@ -1,0 +1,36 @@
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Itim', cursive;
+    background: black;
+}
+.incorrecto{
+    color: white;
+    text-align: center;
+}
+main{
+    width: 80%;
+    margin: 50px auto ;
+    background: #e67019;
+    padding: 10px;
+    display: none;
+}
+
+ion-icon {
+    color: green;
+    font-size: larger;
+}
+
+#valiarPreguntas{
+    margin: 30px 0px 30px 0px;
+    padding: 8px 25px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    background: #9c9284;
+}
+#valiarPreguntas:hover{
+    background: #30d3d3;
+    transition: linear 1s;
+}

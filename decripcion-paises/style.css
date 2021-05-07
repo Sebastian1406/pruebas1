@@ -1,0 +1,123 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: hsl(207, 26%, 17%);
+    color: hsl(0, 0%, 100%);
+}
+header{
+    display: flex;
+    background-color: hsl(209, 23%, 22%);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+header h1{
+    font-size: larger;
+}
+
+.tema h1{
+    font-size:small;
+}
+#darkMode{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+}
+.contenedor{
+    display: flex;
+    gap: 100px;
+}
+
+img{
+    width: 450px;
+    height: 300px;
+}
+#regresar{
+    padding: 5px 20px;
+    margin: 0px 0px 50px 0px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.466);
+    cursor: pointer;
+    border: none;
+}
+h1{
+    margin: 5px 0px;
+}
+span{
+    color: hsl(0, 0%, 52%);
+
+}
+.contenedor-descripcion{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.descripcion{
+    width: 50%;
+}
+#back-icon{
+    width: 15px;
+    height: 10px;
+}
+main{
+    padding: 50px;
+}
+
+@media screen and (max-width:400px){
+
+    header h1{
+        font-size: 13px
+    }
+    .tema h1{
+        font-size: 10px
+    }
+    header{
+        padding: 10px 30px;
+    }
+    main{
+        padding: 30px;
+    }
+    .contenedor{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contenedor h1{
+        font-size:larger;
+    }
+    .bandera{
+        width: 100%;
+    }
+    .bandera img{
+        width: 100%;
+        height: 200px;
+    }
+    .contenedor-descripcion{
+        flex-direction: column;
+        min-width: 300px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .contenedor{
+        flex-direction: column;
+        gap: 50px;
+        width: 100%;
+    }
+    .contenedor-descripcion{
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+    .descripcion{
+        width: 100%;
+    }
+    .contenedor-descripcion div{
+        max-width: 200px;
+    }
+    .bandera img{
+        width: 100%;
+        height: 270px;
+    }
+}

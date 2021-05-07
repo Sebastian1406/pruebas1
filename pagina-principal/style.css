@@ -1,0 +1,172 @@
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: hsl(207, 26%, 17%);
+    color: hsl(0, 0%, 100%);
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.oscuro{
+    background-color: black;
+}
+header{
+    display: flex;
+    background-color: hsl(209, 23%, 22%);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+}
+h1{
+    font-size: larger;
+}
+.tema h1{
+    font-size:small;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+}
+.caja{
+    width: 250px;
+    border-radius: 10px;
+    background-color: hsl(209, 23%, 22%);
+    border: solid 5px rgba(0, 0, 0, 0.267);
+    box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.185)
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+
+}
+#darkMode{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+}
+#botonBuscar{
+    background-color: transparent;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    min-width: 50px;
+}
+
+#botonBuscar:hover{
+    transition: linear 0.2s ;
+    color: rgb(194, 124, 34);
+}
+.buscador{
+    background-color: hsl(209, 23%, 22%);
+    padding: 10px;
+    border-radius: 10px;
+}
+.buscador input[type="search"]{
+    background-color: transparent;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    width: 250px;
+    transition: width 2s;
+}
+.buscador input[type="search"]::placeholder{
+    color: hsl(0, 0%, 100%);
+}
+.buscador input[type="search"]:focus{
+  width: 300px;
+}
+.filtro{
+    background-color: hsl(209, 23%, 22%);
+    padding: 10px;
+    border-radius: 10px;
+}
+.filtro select{
+    background-color: transparent;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    width: 150px;
+    transition: width 2s;
+}
+.descripcion{
+    margin: 20px;
+}
+.descripcion span{
+    color: hsl(0, 0%, 52%);
+    font-size: small;
+}
+.bandera img{
+    width: 100%;
+    height: 170px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.descripcion p{
+    margin: 5px 0px;
+}
+
+.boton-paises{
+    border: none;
+    background-color: transparent;
+    font-size: larger;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+
+}
+.boton-paises:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width:400px){
+
+    h1{
+        font-size: medium;
+    }
+    header{
+        padding: 0px 30px;
+    }
+
+    .buscador input[type="search"]{
+        max-width: 150px;
+    }
+    nav{
+        padding: 20px;
+    }
+    main{
+        padding: 20px;
+    }
+    
+}
+
+@media screen and (max-width:600px){
+ 
+    nav{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+    .filtro{
+        margin-top: 30px;
+        max-width: 160px;
+    }
+    .filtro select{
+        width: 150px;
+    }
+    main{
+        padding: 0px 50px;
+    }
+    .caja{
+        max-width: 250px;
+    }
+    .buscador input[type="search"]{
+        width: 200px;
+    }
+    
+    .buscador input[type="search"]:focus{
+        width: 250px;
+    }
+}

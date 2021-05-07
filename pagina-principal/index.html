@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primera pagina</title>
+    <!-- iconos -->
+    <script src="https://kit.fontawesome.com/99c003c808.js" crossorigin="anonymous"></script>
+    
+    <!-- fuente de letra -->
+    <style>@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,600;0,800;1,300&display=swap');</style> 
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="titulo">
+            <h1>Where in the world?</h1>
+        </div>
+        <div class="tema">
+            <h1><button id="darkMode"><i class="fas fa-moon"></i></button>Dark Mode</h1>
+            <!-- <a href="paginaSencundaria\index.html">hola</a> -->
+        </div>
+    </header>
+
+<nav>
+    <div class="buscador">
+        <button id="botonBuscar"><i class="fas fa-search"></i></button><input id="textoNombrePaises" type="search" placeholder="Search for a country...">
+    </div>
+    <div class="filtro">
+        <select name="regiones" id="filtroRegion" aria-placeholder="Filter by Region">
+            <option value="" disabled selected>Filter by Region</option>
+            <option value="africa">Africa</option>
+            <option value="americas">America</option>
+            <option value="asia">Asia</option>
+            <option value="europe">Europe</option>
+            <option value="oceania">Oceania</option>
+        </select>
+    </div>
+</nav>
+<main>
+</main>
+
+
+<script src="index.js"></script>
+</body>
+</html>
